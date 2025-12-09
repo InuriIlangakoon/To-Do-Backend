@@ -12,6 +12,12 @@ public class CreateTaskRequest {
 
     public CreateTaskRequest() {}
 
+    public CreateTaskRequest( String task, String description )
+    {
+        this.title = task;
+        this.description = description;
+    }
+
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
